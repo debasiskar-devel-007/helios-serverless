@@ -1,0 +1,48 @@
+<ng-container *ngIf="router.url == '/' || router.url == '/home'">
+  <mat-card class="headerbottom vpheaderwrapper">
+    <span class="mainwrappercontent">
+      <span class="homemain">
+        <mat-toolbar color="primary">
+          <mat-toolbar-row>
+            <span class="topmenuiconlogo">
+              <span class="logowrappersml" fxFlex><a [routerLink]="['/']"><img src="https://all-frontend-assets.s3.amazonaws.com/helios/images/logo.png"
+                    class="landinglogoblock1"></a></span>
+              <button mat-icon-button (click)="toggleNavbar()" fxShow="true" fxHide.gt-sm>
+                <mat-icon>menu</mat-icon>
+              </button>
+              <span class="menu-spacer"></span>
+            </span>
+
+            <span fxShow="true" class="smlmenudiv" [ngClass]="{ 'show': navbarOpen }">
+              <mat-nav-list fxLayout>
+                <span class="pagelogowrapper" fxFlex><a [routerLink]="['/']"><img src="https://all-frontend-assets.s3.amazonaws.com/helios/images/logo.png"
+                      class="landinglogoblock1"></a></span>
+                <span class="menuwrapper">
+                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                    <a [routerLink]="['/home']">Home</a>
+                  </mat-list-item>
+                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                    <a [routerLink]="['/']">Medical Lists</a>
+                  </mat-list-item>                 
+                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                    <a [routerLink]="['/']">How It Works</a>
+                  </mat-list-item>
+                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                    <a [routerLink]="['/']">GeoFence Features</a>
+                  </mat-list-item>
+                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                    <a [routerLink]="['/']">Contact Us</a>
+                  </mat-list-item>
+                </span>
+              </mat-nav-list>
+            </span>
+
+          </mat-toolbar-row>
+        </mat-toolbar>
+      </span>
+    </span>
+  </mat-card>
+
+</ng-container>
+
+

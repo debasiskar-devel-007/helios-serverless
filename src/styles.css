@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.eot');
+    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.woff2') format('woff2'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.woff') format('woff'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.ttf') format('truetype'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica-Normal';
+    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.eot');
+    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.eot?#iefix') format('embedded-opentype'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.woff2') format('woff2'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.woff') format('woff'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.ttf') format('truetype'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.svg#Helvetica-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.homeblock1bg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homeblock1bg.jpg') no-repeat top right;background-size: cover;height:100vh;}

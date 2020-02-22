@@ -8,9 +8,23 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 
+import 'hammerjs';
+
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+
+
+import { HomeComponent } from './component/home/home.component';
+import { DemoMaterialModule } from 'src/material-module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
+    HeaderComponent,
+    FooterComponent,
+
+    HomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -18,7 +32,8 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
     CommonModule,
     TransferHttpCacheModule,
     HttpClientModule,
-    NgtUniversalModule
+    NgtUniversalModule,
+    DemoMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
