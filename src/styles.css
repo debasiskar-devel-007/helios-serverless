@@ -1,33 +1,330 @@
 /* You can add global styles to this file, and also import other style files */
+
+
 @font-face {
-    font-family: 'HelveticaBold';
-    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.eot');
-    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.woff2') format('woff2'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.woff') format('woff'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.ttf') format('truetype'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+    font-family: 'Helvetica-Normal';
+    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.eot');
+    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.eot?#iefix') format('embedded-opentype'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.woff2') format('woff2'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.woff') format('woff'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.ttf') format('truetype'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.svg#Helvetica-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.eot');
+    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.woff2') format('woff2'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.woff') format('woff'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.ttf') format('truetype'),
+        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Helvetica-Normal';
-    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.eot');
-    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.eot?#iefix') format('embedded-opentype'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.woff2') format('woff2'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.woff') format('woff'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.ttf') format('truetype'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/Helvetica-Normal.svg#Helvetica-Normal') format('svg');
-    font-weight: normal;
-    font-style: normal;
+
+
+:root {
+    --main-bg-color: #195bb4;
+    --main-txt-color: #38c332;  
+    --main-padding: 15px;  
+    --main-margin: 44px;  
+
+    --height-window:100vh;
+    --border-radius-0: 0;
+    --wrapper-1460:1460px;
+  }
+
+
+* {
+    /* Typography */
+    --main-font: 'Helvetica-Normal', serif;
+    --main-bold-font: 'Helvetica-Bold', serif;
+    
+    /* Calculation */
+    --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
+
+  }
+
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+  h1 {
+    /* Set max and min font sizes */
+    --max-font: 48;
+    --min-font: 24;
+    font-family: var(--main-font);
+    font-size: var(--responsive);
+  }
+
+  h1.text-gradient {
+    /* Set max and min font sizes */
+    --max-font: 70;
+    --min-font: 35;
+    font-family: var(--main-bold-font);
+    font-size: var(--responsive);
+  }
+  
+  p {
+    font-family: var(--main-font);
+    margin: auto;
+    width: fit-content;
+    
+    /* Set max and min font sizes */
+    --max-font: 24;
+    --min-font: 14;
+    font-size: var(--responsive);
+  }
+  
+  @media (min-width: 1200px) {
+    h1,
+    p {
+      font-size: calc(var(--max-font) * 1px);
+    }
+  }
+  
+  @media (max-width: 420px) {
+    h1,
+    p {
+      font-size: calc(var(--min-font) * 1px);
+    }
+  }
+
+  
+  
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+a,a:visited,a:focus,a:active,a:link{text-decoration:none;outline:0; cursor: pointer;}
+a{color:#87ceeb;transition:.2s ease-in-out color}
+h1,h2,h3,h4{margin:42px 0}
+ul{padding:0;list-style:none}
+img{vertical-align:middle;height:auto;width:100%}
+/* .full-screen{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:center;background-repeat:no-repeat;min-width:100%} */
+[hidden]{display:none}
+
+.mat-card{font-family: var(--main-font) !important;}
+
+.mainwrapper{width:var(--wrapper-1460); margin: 0 auto;}
+@media (max-width: 1200px) {
+    .mainwrapper{width:96%; margin: 0 auto;}
 }
 
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.text-gradient {text-transform: uppercase;background: linear-gradient(to bottom, #0cacfc 0%, #147cf9 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 
 
 
-.homeblock1bg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homeblock1bg.jpg') no-repeat top right;background-size: cover;height:100vh;}
+/******** LOADER ********/
+
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 100500;
+}
+.pix-pulse{
+    height: 50px;
+    width: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.pix-pulse:after {
+    content: '';
+    display: block;
+    -webkit-mask: var(--pix-svg-loader) no-repeat 0 0;
+    mask: var(--pix-svg-loader) no-repeat 0 0;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    background-color: var(--pix-main-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    -webkit-animation: 2s pix-pulse linear infinite;
+    -moz-animation: 2s pix-pulse linear infinite;
+    -o-animation: 2s pix-pulse linear infinite;
+    animation: 2s pix-pulse linear infinite;
+    clip: rect(0, 0, 50px, 0);
+}
+.pix-pulse:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+    top: 16px;
+    margin: auto;
+    height: 3px;
+}
+
+@keyframes pix-pulse {
+    0% {
+        clip: rect(0, 0, 50px, 0);
+    }
+    4% {
+        clip: rect(0, 33.33333px, 50px, 0);
+    }
+    15% {
+        clip: rect(0, 66.66667px, 50px, 0);
+    }
+    20% {
+        clip: rect(0, 200px, 50px, 0);
+        opacity:1;
+    }
+    80% {
+        clip: rect(0, 200px, 50px, 0);
+        opacity:0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        clip: rect(0, 200px, 100px, 0);
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes pix-pulse {
+    0% {
+        clip: rect(0, 0, 50px, 0);
+    }
+    4% {
+        clip: rect(0, 33.33333px, 50px, 0);
+    }
+    15% {
+        clip: rect(0, 66.66667px, 50px, 0);
+    }
+    20% {
+        clip: rect(0, 200px, 50px, 0);
+        opacity:1;
+    }
+    80% {
+        clip: rect(0, 200px, 50px, 0);
+        opacity:0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        clip: rect(0, 200px, 100px, 0);
+        opacity:0;
+    }
+}
+
+/******** flex-column ********/
+
+.flex-column-gen{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-orient:vertical;-moz-box-orient:vertical;-ms-box-orient:vertical;box-orient:vertical;width:100%}
+.main-gen,.sideblock-gen{width:100%}
+.main-gen{-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;-ms-flex-order:2;-webkit-order:2;order:2}
+.sideblock-gen{-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;-ms-flex-order:1;-webkit-order:1;order:1}
+
+
+.flex-row-gen{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-orient: horizontal;-moz-box-orient: horizontal;-webkit-box-direction: normal;-moz-box-direction: normal; -webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;width:100%}
+.main-row-gen,.sideblock-row-gen{}
+
+.main-row-gen{-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;-ms-flex-order:1;-webkit-order:1;order:1}
+.sideblock-row-gen{-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;-ms-flex-order:2;-webkit-order:2;order:2}
+
+
+
+
+/******** home page css ********/
+.homemain .mat-list-item .mat-list-item-content{padding: 0 !important;}
+.homeblock1bg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homeblock1bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0); height: var(--height-window);}
+
+
+
+
+
+.formcls .mat-card-header {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 12px;
+    background: #262626;
+    box-shadow: 0 6px 24px -8px rgba(0,0,0,.75);
+}
+.formcls .example-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.formcls .example-container>* {
+    width: 100%;
+}
+.formcls .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 6px;
+}
+.formcls .mat-form-field-appearance-legacy .mat-form-field-infix {
+    border-top: 0!important;
+    padding: .6375em 5px!important;
+}
+.formcls input.mat-input-element {
+    margin-top: -.0725em;
+}
+.formcls .mat-input-element {
+    caret-color: #000!important;
+    caret-color: #dc012a!important;
+}
+.formcls .mat-form-field-label-wrapper {
+    left: 5px!important;
+    width: 98%;
+}
+.formcls .mat-form-field-label-wrapper {
+    top: 0;
+    padding-top: 0;
+}
+.formcls .mat-form-field .mat-form-field-label {
+    color: #000;
+}
+.formcls .mat-form-field-appearance-legacy .mat-form-field-label {
+    top: 6px;
+    font-family: RobotoRegular;
+    font-size: 16px;
+    color: #262626;
+}
+.formcls button {
+    padding: 20px 10px 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 0 solid #e0e2e7;
+    font-family: var(--main-font);
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    white-space: normal;
+    background: rgba(39,39,39,1);
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(39,39,39,1)),to(rgba(8,8,8,1)));
+    background: linear-gradient(to bottom,rgba(39,39,39,1) 0,rgba(8,8,8,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#272727', endColorstr='#080808', GradientType=0);
+}
+
+@media (max-width: 1280px){
+    .formcls .mat-form-field-appearance-legacy .mat-form-field-label {
+        top: 8px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,35 @@
+
+
+
+.homeblock1bg{padding-top: 142px;}
+.homeblock1bg h1{margin: 0 0 21px;line-height: 48px;}
+.homeblock1bg h2{margin: 0 0 40px;line-height: 48px; color:var(--main-txt-color);}
+.homeblock1bg h2 {
+    /* Set max and min font sizes */
+    --max-font: 38;
+    --min-font: 19;
+    font-family: var(--main-font);
+    font-size: var(--responsive);
+  }
+  
+@media (min-width: 1200px) {
+.homeblock1bg h2 {
+      font-size: calc(var(--max-font) * 1px);
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .homeblock1bg h2,.homeblock1bg h1 {
+      font-size: calc(var(--min-font) * 1px);
+      line-height: normal;
+    }
+}
+
+.doctorimg{position: absolute;bottom: -1px;left: 0;height: 761px;overflow: hidden;}
+@media (max-width: 991px) {
+    .doctorimg{height: auto;}
+}
+
+.homebannerlist{
+    
+}
