@@ -1,1 +1,39 @@
-<p>footer works!</p>
+<span class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+  <a (click)="scrollToTop()">
+    <!-- <mat-icon aria-hidden="false">keyboard_arrow_up</mat-icon> -->
+    <img src="https://all-frontend-assets.s3.amazonaws.com/helios/images/scroll-to-top-icon.png">
+  </a>
+</span>
+  
+  <mat-card class="mainfooter">  
+    <mat-card-content class="mainfooter_wrapper"> 
+      <mat-card-content class="mainfooter_block1"> 
+        <mat-card-subtitle class="mainfooter_block1_con2">     
+          <span class="mainfooter_block1_con2_top">
+            <h3>Get to Know Us</h3>
+            <mat-nav-list>    
+              <mat-list-item><a mat-menu-item base [routerLink]="['/home']">Home</a></mat-list-item>
+              <mat-list-item><a mat-menu-item base [routerLink]="['/']">Medical Lists</a></mat-list-item>
+              <mat-list-item><a mat-menu-item base [routerLink]="['/how-it-works']">How It Works</a></mat-list-item>          
+              <mat-list-item><a mat-menu-item base [routerLink]="['/geofence-features']">GeoFence Features</a></mat-list-item>
+              <mat-list-item><a mat-menu-item base [routerLink]="['/contact-us']">Contact Us</a></mat-list-item>
+            </mat-nav-list>
+          </span>
+          <span class="mainfooter_block1_con2_bottom">
+              <p>Helios Medical Marketing 1175 American Pacific Dr<br>Henderson, NV 89074<br> <a href="mailto:support@heliosmedicalmarketing.com" target="_top">support@heliosmedicalmarketing.com</a></p>
+          </span>  
+        </mat-card-subtitle>
+        <mat-card-subtitle class="mainfooter_block1_con3">
+            <img src="https://all-frontend-assets.s3.amazonaws.com/helios/images/logo.png">  
+        </mat-card-subtitle>
+      </mat-card-content>
+    </mat-card-content>
+</mat-card>
+<mat-card class="mainfooterbottom">
+    <mat-card-content class="mainfooter_wrapper">
+        <span class="mainfooter_block2">
+            <p>Copyright © 2020 Helios Medical Marketing. All rights reserved. | <a (click)="Commingsoondialog()">Privacy Policy</a> . <a (click)="Commingsoondialog()">Terms & Conditions</a> . <a (click)="Commingsoondialog()">Ad Policies</a> . <a (click)="Commingsoondialog()">Banner Ad Formats</a></p>
+        </span>
+      </mat-card-content>
+</mat-card>
+  

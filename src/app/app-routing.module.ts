@@ -3,11 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 import { HomeComponent } from './component/home/home.component';
+import { GeofenceFeaturesComponent } from './component/geofence-features/geofence-features.component';
+import { HowItWorksComponent } from './component/how-it-works/how-it-works.component';
+import { ContactUsComponent } from './component/contact-us/contact-us.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'geofence-features', component: GeofenceFeaturesComponent },
+  { path: 'how-it-works', component: HowItWorksComponent },
+  { path: 'contact-us', component: ContactUsComponent },
 ];
 
 @NgModule({

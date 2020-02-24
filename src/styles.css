@@ -1,31 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-@font-face {
-    font-family: 'Helvetica-Normal';
-    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.eot');
-    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.eot?#iefix') format('embedded-opentype'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.woff2') format('woff2'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.woff') format('woff'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.ttf') format('truetype'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Normal.svg#Helvetica-Normal') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Helvetica-Bold';
-    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.eot');
-    src: url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.woff2') format('woff2'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.woff') format('woff'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.ttf') format('truetype'),
-        url('https://all-frontend-assets.s3.amazonaws.com/helios/fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-
 :root {
     --main-bg-color: #195bb4;
     --main-txt-color: #38c332;  
@@ -35,7 +10,38 @@
     --height-window:100vh;
     --border-radius-0: 0;
     --wrapper-1460:1460px;
+    --gray-bgColor:#d0e2ec;
+
+    --white-color-txt:#fff;
+    --gray-color-txt:#2e2f2f;
   }
+
+
+
+@font-face {
+    font-family: 'Helvetica-Normal';
+    src: url('assets/fonts/Helvetica-Normal.eot');
+    src: url('assets/fonts/Helvetica-Normal.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Helvetica-Normal.woff2') format('woff2'),
+        url('assets/fonts/Helvetica-Normal.woff') format('woff'),
+        url('assets/fonts/Helvetica-Normal.ttf') format('truetype'),
+        url('assets/fonts/Helvetica-Normal.svg#Helvetica-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('assets/fonts/Helvetica-Bold.eot');
+    src: url('assets/fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Helvetica-Bold.woff2') format('woff2'),
+        url('assets/fonts/Helvetica-Bold.woff') format('woff'),
+        url('assets/fonts/Helvetica-Bold.ttf') format('truetype'),
+        url('assets/fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 
 
 * {
@@ -64,7 +70,7 @@
 
   h1.text-gradient {
     /* Set max and min font sizes */
-    --max-font: 70;
+    --max-font: 56;
     --min-font: 35;
     font-family: var(--main-bold-font);
     font-size: var(--responsive);
@@ -115,7 +121,7 @@ img{vertical-align:middle;height:auto;width:100%}
     .mainwrapper{width:96%; margin: 0 auto;}
 }
 
-.text-gradient {text-transform: uppercase;background: linear-gradient(to bottom, #0cacfc 0%, #147cf9 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.text-gradient {text-transform: capitalize;background: linear-gradient(to bottom, #0cacfc 0%, #147cf9 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
 
 
 
@@ -231,13 +237,11 @@ img{vertical-align:middle;height:auto;width:100%}
 
 .flex-column-gen{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-orient:vertical;-moz-box-orient:vertical;-ms-box-orient:vertical;box-orient:vertical;width:100%}
 .main-gen,.sideblock-gen{width:100%}
-.main-gen{-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;-ms-flex-order:2;-webkit-order:2;order:2}
-.sideblock-gen{-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;-ms-flex-order:1;-webkit-order:1;order:1}
+.sideblock-gen{-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;-ms-flex-order:2;-webkit-order:2;order:2}
+.main-gen{-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;-ms-flex-order:1;-webkit-order:1;order:1}
 
 
 .flex-row-gen{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-orient: horizontal;-moz-box-orient: horizontal;-webkit-box-direction: normal;-moz-box-direction: normal; -webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;width:100%}
-.main-row-gen,.sideblock-row-gen{}
-
 .main-row-gen{-webkit-box-ordinal-group:1;-moz-box-ordinal-group:1;-ms-flex-order:1;-webkit-order:1;order:1}
 .sideblock-row-gen{-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;-ms-flex-order:2;-webkit-order:2;order:2}
 
@@ -246,20 +250,55 @@ img{vertical-align:middle;height:auto;width:100%}
 
 /******** home page css ********/
 .homemain .mat-list-item .mat-list-item-content{padding: 0 !important;}
-.homeblock1bg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homeblock1bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0); height: var(--height-window);}
+.homeblock1bg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homeblock1bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 936px;}
 
+.gefencebannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/gefencebannerbg.png') no-repeat top right;background-size: 100%;
+    padding: 0;border-radius: var(--border-radius-0);height: 648px;box-shadow: none;min-height: inherit;}
 
-
-
+.howitworksbannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbannerbg.jpg') no-repeat top right;background-size: 100%;
+        padding: 0;border-radius: var(--border-radius-0);height: 548px;box-shadow: none;min-height: inherit;}
+/* 
+.howitworksbannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbannerbg.jpg') no-repeat top right;background-size: 100%;
+            padding: 0;border-radius: var(--border-radius-0);height: 548px;box-shadow: none;min-height: inherit;}
+     */
+   
 
 .formcls .mat-card-header {
     width: 100%;
     margin-left: 0;
     margin-top: 0;
     padding: 12px;
-    background: #262626;
-    box-shadow: 0 6px 24px -8px rgba(0,0,0,.75);
+    background: -moz-linear-gradient(360deg, rgba(94,197,89,1) 0%, rgba(12,195,3,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(94,197,89,1)), color-stop(100%, rgba(12,195,3,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(360deg, rgba(94,197,89,1) 0%, rgba(12,195,3,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(360deg, rgba(94,197,89,1) 0%, rgba(12,195,3,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(360deg, rgba(94,197,89,1) 0%, rgba(12,195,3,1) 100%); /* ie10+ */
+    background: linear-gradient(90deg, rgba(94,197,89,1) 0%, rgba(12,195,3,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ec559', endColorstr='#0cc303',GradientType=1 ); /* ie6-9 */
+    border: 2px solid #fff;
+    flex-wrap: wrap;
 }
+
+.formcls .mat-card-header h2{
+    color:var(--white-color-txt) !important;
+    text-align: center;
+    flex: 1 1 100%;
+    text-shadow: 1px 0px 2px rgba(150, 150, 150, 1);
+}
+
+.formcls .mat-card-header span{
+    flex: 1 1 100%;
+    font-size: 22px;
+    text-align: center;
+    font-family: var(--main-bold-font);
+    text-shadow: 1px 0px 2px rgba(150, 150, 150, 1);
+    color:var(--white-color-txt);
+}
+
+.formcls .mat-card-header .mat-card-header-text {
+    margin: 0;
+}
+
 .formcls .example-container {
     display: -webkit-box;
     display: flex;
@@ -267,12 +306,55 @@ img{vertical-align:middle;height:auto;width:100%}
     -webkit-box-direction: normal;
     flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 22px 26px;
     margin-bottom: 0;
 }
 .formcls .example-container>* {
     width: 100%;
 }
+
+.formcls .mat-card-footer {
+    display: block;
+    margin: 0;
+}
+
+
+.formcls .example-container mat-label{font-family: var(--main-font); color:var(--gray-color-txt);font-size: 18px; }
+
+.formcls input.mat-input-element {
+    height: 38px;
+    color: #000!important;
+    background: #fff;
+    border: 1px solid #83a5b7;
+}
+
+.formcls .mat-form-field-underline {
+    bottom: 12px;
+    display: none;
+}
+
+.formcls textarea.mat-input-element{
+    height: 98px;
+    color: #000!important;
+    background: #fff;
+    border: 1px solid #83a5b7;
+}
+
+
+.formcls .mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: 0;
+    border-top: 0;
+}
+
+.formcls .mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: 0;
+}
+
+.formcls .mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 0;
+    padding: 0;
+}
+
 .formcls .mat-form-field-appearance-legacy .mat-form-field-wrapper {
     padding-bottom: 6px;
 }
@@ -305,26 +387,96 @@ img{vertical-align:middle;height:auto;width:100%}
     color: #262626;
 }
 .formcls button {
-    padding: 20px 10px 10px;
+    padding: 14px 10px 10px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border: 0 solid #e0e2e7;
     font-family: var(--main-font);
-    font-size: 48px;
+    font-size: 24px;
     text-transform: uppercase;
     color: #fff;
     width: 100%;
     white-space: normal;
-    background: rgba(39,39,39,1);
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(39,39,39,1)),to(rgba(8,8,8,1)));
-    background: linear-gradient(to bottom,rgba(39,39,39,1) 0,rgba(8,8,8,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#272727', endColorstr='#080808', GradientType=0);
+    background: -moz-linear-gradient(270deg, rgba(35,61,77,1) 0%, rgba(15,28,39,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(35,61,77,1)), color-stop(100%, rgba(15,28,39,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(35,61,77,1) 0%, rgba(15,28,39,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(35,61,77,1) 0%, rgba(15,28,39,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(35,61,77,1) 0%, rgba(15,28,39,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(35,61,77,1) 0%, rgba(15,28,39,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#233d4d', endColorstr='#0f1c27',GradientType=0 ); /* ie6-9 */
 }
+
+
+.generalmodalcls .mat-dialog-content{margin:0!important;padding:0!important}
+.generalmodalcls .modal-content{background:#f9f9f9;position:relative;z-index:20;border-radius:0;color:#000;box-shadow:none;position:relative;-ms-flex:1 1 auto;flex:1 1 auto;padding:15px;-moz-box-shadow:inset 0 0 10px #000;-webkit-box-shadow:inset 0 0 10px #000;box-shadow:inset 0 0 10px #000}
+.mat-dialog-container{width:100%;box-shadow:0 3px 7px rgba(0,0,0,.25);box-sizing:border-box;transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-webkit-transition:all .4s ease-in-out;padding:10px!important;border-radius:0!important;height:inherit!important;margin-top:20px;margin-bottom:20px}
+.mat-dialog-actions{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:end;justify-content:flex-end;padding:0}
+.generalmodalcls .mat-dialog-actions{padding:8px 0;display:flex;flex-wrap:wrap;min-height:52px;align-items:center;margin-bottom:0;justify-content:center}
+.generalmodalcls .logowrapperouter{background-color:#151519;padding:15px;margin-bottom:15px}
+.generalmodalcls .logowrapper{text-align:center;width:350px;margin:0 auto!important}
+.generalmodalcls .infomodal{max-width:96vw}
+.generalmodalcls h1{display:block;text-align:center;margin:0;padding:10px 0 15px;font-size:24px;color:#111;font-family:var(--main-bold-font); text-transform: uppercase;}
+.generalmodalcls .mat-form-field-appearance-legacy .mat-form-field-infix{width:auto;padding:0 15px!important;height:36px!important;background:#e1e0e6!important;margin:5px 0;height:50px!important}
+.generalmodalcls .mat-form-field-appearance-legacy .mat-form-field-infix input{height:50px!important}
+.generalmodalcls .mat-form-field{display:block!important}
+.generalmodalcls .mat-form-field-flex{display:block!important;border:none!important;padding:0!important}
+
 
 @media (max-width: 1280px){
     .formcls .mat-form-field-appearance-legacy .mat-form-field-label {
         top: 8px;
         font-size: 14px;
     }
+}
+
+/* .bannerbottomrightwrapper{border-radius: 20px;} */
+
+.bannerbottomright{margin: 0;     
+    border-left: 16px solid #dfebf2;
+    border-right: 16px solid #dfebf2;
+    border-bottom: 16px solid #dfebf2;
+    display: flex;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    background: -moz-linear-gradient(356deg, rgba(11,22,33,1) 0%, rgba(9,75,7,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(11,22,33,1)), color-stop(100%, rgba(9,75,7,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(356deg, rgba(11,22,33,1) 0%, rgba(9,75,7,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(356deg, rgba(11,22,33,1) 0%, rgba(9,75,7,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(356deg, rgba(11,22,33,1) 0%, rgba(9,75,7,1) 100%); /* ie10+ */
+    background: linear-gradient(94deg, rgba(11,22,33,1) 0%, rgba(9,75,7,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b1621', endColorstr='#094b07',GradientType=1 ); /* ie6-9 */
+    width: 45%;
+    float: right;
+    margin-top: 55px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.bannerbottomright p{
+    color: var(--white-color-txt);
+    text-align: center;
+}
+
+.bannerbottomright:before{
+    content:"";
+    background: url('https://all-frontend-assets.s3.amazonaws.com/helios/images/beto_inner_banner_right_top.png');
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    z-index: 99;
+    height: 24px;
+    width: 120px;
+}
+
+.bannerbottomright:after{
+    content:"";
+    background: url('https://all-frontend-assets.s3.amazonaws.com/helios/images/beto_inner_banner_left_top.png');
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    z-index: 99;
+    height: 24px;
+    width: 146px;
 }

@@ -8,14 +8,19 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
 
+import { MetaModule } from '@ngx-meta/core';
+
 import 'hammerjs';
 
 import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
+import { FooterComponent, comingSoonDialogfooter } from './layout/footer/footer.component';
 
 
 import { HomeComponent } from './component/home/home.component';
 import { DemoMaterialModule } from 'src/material-module';
+import { GeofenceFeaturesComponent } from './component/geofence-features/geofence-features.component';
+import { HowItWorksComponent } from './component/how-it-works/how-it-works.component';
+import { ContactUsComponent } from './component/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -24,18 +29,23 @@ import { DemoMaterialModule } from 'src/material-module';
     HeaderComponent,
     FooterComponent,
 
-    HomeComponent
+    HomeComponent,
+    GeofenceFeaturesComponent,
+    HowItWorksComponent,    
+    comingSoonDialogfooter, ContactUsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    MetaModule.forRoot(),
     AppRoutingModule,
     CommonModule,
     TransferHttpCacheModule,
     HttpClientModule,
     NgtUniversalModule,
-    DemoMaterialModule
+    DemoMaterialModule,  
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [comingSoonDialogfooter]
 })
 export class AppModule { }

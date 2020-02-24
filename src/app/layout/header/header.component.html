@@ -1,4 +1,4 @@
-<ng-container *ngIf="router.url == '/' || router.url == '/home'">
+<ng-container *ngIf="router.url == '/' || router.url == '/home' || router.url == '/geofence-features' || router.url == '/how-it-works' || router.url == '/contact-us'">
   <mat-card class="headerbottom vpheaderwrapper">
     <span class="mainwrappercontent">
       <span class="homemain">
@@ -25,13 +25,13 @@
                     <a [routerLink]="['/']">Medical Lists</a>
                   </mat-list-item>                 
                   <mat-list-item fxFlex routerLinkActive="activemenu">
-                    <a [routerLink]="['/']">How It Works</a>
+                    <a [routerLink]="['/how-it-works']">How It Works</a>
                   </mat-list-item>
                   <mat-list-item fxFlex routerLinkActive="activemenu">
-                    <a [routerLink]="['/']">GeoFence Features</a>
+                    <a [routerLink]="['/geofence-features']">GeoFence Features</a>
                   </mat-list-item>
                   <mat-list-item fxFlex routerLinkActive="activemenu">
-                    <a [routerLink]="['/']">Contact Us</a>
+                    <a [routerLink]="['/contact-us']">Contact Us</a>
                   </mat-list-item>
                 </span>
               </mat-nav-list>
@@ -42,6 +42,8 @@
       </span>
     </span>
   </mat-card>
+
+ 
 
 </ng-container>
 
