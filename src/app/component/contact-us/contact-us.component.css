@@ -26,8 +26,8 @@
 
 .contactusbgbannerbginner h2 {
     /* Set max and min font sizes */
-    --max-font: 38;
-    --min-font: 19;
+    --max-font: 30;
+    --min-font: 15;
     font-family: var(--main-font);
     font-size: var(--responsive);
   }
@@ -40,4 +40,14 @@
 .imgcontactusleftwrappercontent p{color: #fff;}
 .imgcontactusleftwrappercontent p a{margin-top: 30px !important;display: inline-block; color:#fcff00; font-family: var(--main-font); font-size: 30px;}
 
+.contactusbgbannerbginner .formcls .mat-card-header{
+    background: -moz-linear-gradient(356deg, rgba(29,188,233,1) 0%, rgba(12,195,3,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(29,188,233,1)), color-stop(100%, rgba(12,195,3,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(356deg, rgba(29,188,233,1) 0%, rgba(12,195,3,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(356deg, rgba(29,188,233,1) 0%, rgba(12,195,3,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(356deg, rgba(29,188,233,1) 0%, rgba(12,195,3,1) 100%); /* ie10+ */
+    background: linear-gradient(94deg, rgba(29,188,233,1) 0%, rgba(12,195,3,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1dbce9', endColorstr='#0cc303',GradientType=1 ); /* ie6-9 */
+}
+.contactusbgbannerbginner .formcls .mat-card-header h2{text-transform: uppercase;padding-top: 10px;}
 /* .geofencefeaturesblock1{margin-top: -5%;} */

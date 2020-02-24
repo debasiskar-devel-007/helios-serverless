@@ -21,6 +21,7 @@ import { DemoMaterialModule } from 'src/material-module';
 import { GeofenceFeaturesComponent } from './component/geofence-features/geofence-features.component';
 import { HowItWorksComponent } from './component/how-it-works/how-it-works.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
+import { MedicalListsComponent } from './component/medical-lists/medical-lists.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { ContactUsComponent } from './component/contact-us/contact-us.component'
     HomeComponent,
     GeofenceFeaturesComponent,
     HowItWorksComponent,    
-    comingSoonDialogfooter, ContactUsComponent
+    comingSoonDialogfooter, 
+    ContactUsComponent, 
+    MedicalListsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

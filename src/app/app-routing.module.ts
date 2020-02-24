@@ -6,6 +6,7 @@ import { HomeComponent } from './component/home/home.component';
 import { GeofenceFeaturesComponent } from './component/geofence-features/geofence-features.component';
 import { HowItWorksComponent } from './component/how-it-works/how-it-works.component';
 import { ContactUsComponent } from './component/contact-us/contact-us.component';
+import { MedicalListsComponent } from './component/medical-lists/medical-lists.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'geofence-features', component: GeofenceFeaturesComponent },
   { path: 'how-it-works', component: HowItWorksComponent },
   { path: 'contact-us', component: ContactUsComponent },
+  { path: 'medical-lists', component: MedicalListsComponent },
 ];
 
 @NgModule({

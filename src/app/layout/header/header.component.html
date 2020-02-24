@@ -1,4 +1,4 @@
-<ng-container *ngIf="router.url == '/' || router.url == '/home' || router.url == '/geofence-features' || router.url == '/how-it-works' || router.url == '/contact-us'">
+<ng-container *ngIf="router.url == '/' || router.url == '/home' || router.url == '/geofence-features' || router.url == '/how-it-works' || router.url == '/contact-us' || router.url == '/medical-lists'">
   <mat-card class="headerbottom vpheaderwrapper">
     <span class="mainwrappercontent">
       <span class="homemain">
@@ -22,7 +22,7 @@
                     <a [routerLink]="['/home']">Home</a>
                   </mat-list-item>
                   <mat-list-item fxFlex routerLinkActive="activemenu">
-                    <a [routerLink]="['/']">Medical Lists</a>
+                    <a [routerLink]="['/medical-lists']">Medical Lists</a>
                   </mat-list-item>                 
                   <mat-list-item fxFlex routerLinkActive="activemenu">
                     <a [routerLink]="['/how-it-works']">How It Works</a>

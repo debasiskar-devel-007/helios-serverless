@@ -27,6 +27,18 @@
 .homemain .smlmenudiv{width:100%;margin:0 auto}
 .vpheaderwrapper .mat-toolbar.mat-primary{width:100%}
 }
+
+@media (max-width: 1666px) {
+    .pagelogowrapper {margin-left: 1%;}
+    
+  }
+
+  @media (max-width: 1500px) {
+    .pagelogowrapper {
+        margin-left: 2%;
+    }
+  }
+
 @media screen and (max-width:1366px) {
 .pagelogowrapper{margin-left:8%}
 }

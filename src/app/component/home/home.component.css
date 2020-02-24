@@ -6,7 +6,7 @@
 .homeblock1bg h2{margin: 0;line-height: 48px; color:var(--main-txt-color);}
 .homeblock1bg h2 {
     /* Set max and min font sizes */
-    --max-font: 38;
+    --max-font: 36;
     --min-font: 19;
     font-family: var(--main-font);
     font-size: var(--responsive);
@@ -23,14 +23,28 @@
   .homebannerlist .mat-list-item:nth-child(2){padding-left: 46px;}
   .homebannerlist .mat-list-item:nth-child(3){padding-left: 100px;}
 
-
-
+ 
 @media (min-width: 1200px) {
 .homeblock1bg h2 {
       font-size: calc(var(--max-font) * 1px);
     }
   }
   
+
+  @media (max-width: 1800px) {
+    .homebannerlist {margin-left: 40%;}
+    .homebannerlist .mat-list-item {font-size: 36px;line-height: 38px;}
+  }
+
+  @media (max-width: 1666px) {
+    .doctorimg {left: -90px !important;}
+  }
+  @media (max-width: 1500px) {
+    .homebannerlist {margin-left: 45%;}
+    .homebannerlist .mat-list-item {font-size: 31px;line-height: 39px;}
+    .mainwrapper {width: 96%;}
+  }
+
   @media (max-width: 420px) {
     .homeblock1bg h2,.homeblock1bg h1 {
       font-size: calc(var(--min-font) * 1px);

@@ -95,6 +95,10 @@
     font-size: 18px; opacity: 0; transition: all .2s ease-in-out;}
 .show-scrollTop {opacity: 1; transition: all .2s ease-in-out;}
 
+
+@media screen and (max-width:1500px) {
+    .mainfooter_wrapper {width: 96%;}
+}
 @media screen and (max-width:1199px) {
     .mainfooter_wrapper {
         width: 100%;
