@@ -10,7 +10,7 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
 
 import { MetaModule } from '@ngx-meta/core';
 
-import 'hammerjs';
+//import 'hammerjs';
 
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent, comingSoonDialogfooter } from './layout/footer/footer.component';

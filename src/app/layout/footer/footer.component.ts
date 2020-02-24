@@ -15,13 +15,13 @@ export class FooterComponent implements OnInit {
   constructor(public router: Router,public dialog: MatDialog ) { }
 
   ngOnInit() {
-    this.router.events.subscribe(() =>
-          window.scrollTo({
-              top: 0,
-              left: 0,
-              behavior: 'smooth'
-          })
-      );
+    // this.router.events.subscribe(() =>
+    //       window.scrollTo({
+    //           top: 0,
+    //           left: 0,
+    //           behavior: 'smooth'
+    //       })
+    //   );
   }
 
   
