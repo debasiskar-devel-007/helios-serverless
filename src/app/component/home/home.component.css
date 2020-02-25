@@ -10,7 +10,7 @@
 .homebannerlist .mat-list-item img{width:93px;height:auto;margin-right:20px}
 .homebannerlist .mat-list-item:nth-child(2){padding-left:46px}
 .homebannerlist .mat-list-item:nth-child(3){padding-left:100px}
-.doctorimg{position:absolute;bottom:-1px;left:0;height:761px;overflow:hidden}
+.doctorimg{position:absolute;bottom:-1px;left:0;height:741px;overflow:hidden}
 .sideblock-row-gen.formcls{background-color:var(--gray-bgColor);padding:10px;width:640px}
 
 @media (min-width: 1200px) {
@@ -57,7 +57,7 @@
 .homebannerlist{margin-left:auto;margin-top:20px}
 .doctorimg{height:auto;position: initial;bottom: 0;}
 .sideblock-row-gen.formcls {width: 100%;}
-.homebannerlist .mat-list-item .mat-list-item-content{display:block; text-align: left;}
+/* .homebannerlist .mat-list-item .mat-list-item-content{display:block; text-align: left;} */
 .homebannerlist .mat-list-item .mat-list-item-content{flex-wrap: wrap;align-items: center;justify-content: center;}
 .homebannerlist .mat-list-item img {width: 60px;display: block;}
 .homebannerlist .mat-list-item:nth-child(1) {padding-left: 0; text-align: left;}
