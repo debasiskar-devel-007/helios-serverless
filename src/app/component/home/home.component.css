@@ -36,7 +36,7 @@
 .homebannerlist{margin-left:45%}
 .homebannerlist .mat-list-item{font-size:27px;line-height:34px}
 .homebannerlist .mat-list-item img{width:80px}
-.homeblock1bg h2{line-height:22px;--max-font:32}
+.homeblock1bg h2{line-height:42px;--max-font:32}
 }
 @media (max-width: 1366px) {
 .doctorimg{left:-140px!important}
