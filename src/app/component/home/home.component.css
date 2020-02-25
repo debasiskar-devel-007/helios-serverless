@@ -1,64 +1,71 @@
+.homeblock1bg{padding-top:142px}
+.homeblock1bg h1.text-gradient{margin:0 0 10px;line-height:74px}
+.homeblock1bg h2{margin:0;line-height:48px;color:var(--main-txt-color);--max-font:36;--min-font:19;font-family:var(--main-font);font-size:var(--responsive)}
+.homeblock1bg .main-row-gen{flex:1 1 100%}
+.homebannersection{margin-top:40px!important}
+.imgblock{display:block;width:100%}
+.homebannerlist{margin:0;padding:0;margin-left:30%;z-index:99;position:relative;margin-top:58px}
+.homebannerlist .mat-list-item{height:auto;font-family:var(--main-font);font-size:45px;color:var(--white-color-txt);line-height:46px;margin-bottom:15px}
+.homebannerlist .mat-list-item .mat-list-item-content{padding:0}
+.homebannerlist .mat-list-item img{width:93px;height:auto;margin-right:20px}
+.homebannerlist .mat-list-item:nth-child(2){padding-left:46px}
+.homebannerlist .mat-list-item:nth-child(3){padding-left:100px}
+.doctorimg{position:absolute;bottom:-1px;left:0;height:761px;overflow:hidden}
+.sideblock-row-gen.formcls{background-color:var(--gray-bgColor);padding:10px;width:640px}
 
-
-
-.homeblock1bg{padding-top: 142px;}
-.homeblock1bg h1.text-gradient{margin: 0 0 10px;line-height: 74px;}
-.homeblock1bg h2{margin: 0;line-height: 48px; color:var(--main-txt-color);}
-.homeblock1bg h2 {
-    /* Set max and min font sizes */
-    --max-font: 36;
-    --min-font: 19;
-    font-family: var(--main-font);
-    font-size: var(--responsive);
-  }
-  
-  .homeblock1bg .main-row-gen{flex: 1 1 100%;}
-  .homebannersection{margin-top:40px !important;}
-  .imgblock{display: block; width: 100%;}
-
-  .homebannerlist{margin: 0;padding: 0;margin-left: 30%;z-index: 99;position: relative;margin-top: 58px;}
-  .homebannerlist .mat-list-item{height: auto; font-family: var(--main-font); font-size: 45px; color: var(--white-color-txt);line-height:46px;margin-bottom: 15px;}
-  .homebannerlist .mat-list-item .mat-list-item-content{padding: 0;}
-  .homebannerlist .mat-list-item img{width: 93px; height: auto;margin-right: 20px;}
-  .homebannerlist .mat-list-item:nth-child(2){padding-left: 46px;}
-  .homebannerlist .mat-list-item:nth-child(3){padding-left: 100px;}
-
- 
 @media (min-width: 1200px) {
-.homeblock1bg h2 {
-      font-size: calc(var(--max-font) * 1px);
-    }
-  }
-  
-
-  @media (max-width: 1800px) {
-    .homebannerlist {margin-left: 40%;}
-    .homebannerlist .mat-list-item {font-size: 36px;line-height: 38px;}
-  }
-
-  @media (max-width: 1666px) {
-    .doctorimg {left: -90px !important;}
-  }
-  @media (max-width: 1500px) {
-    .homebannerlist {margin-left: 45%;}
-    .homebannerlist .mat-list-item {font-size: 31px;line-height: 39px;}
-    .mainwrapper {width: 96%;}
-  }
-
-  @media (max-width: 420px) {
-    .homeblock1bg h2,.homeblock1bg h1 {
-      font-size: calc(var(--min-font) * 1px);
-      line-height: normal;
-    }
+.homeblock1bg h2{font-size:calc(var(--max-font) * 1px)}
 }
-
-.doctorimg{position: absolute;bottom: -1px;left: 0;height: 761px;overflow: hidden;}
-@media (max-width: 991px) {
-    .doctorimg{height: auto;}
+@media (max-width: 1870px) {
+.homebannerlist{margin-left:38%}
+.homebannerlist .mat-list-item{font-size:36px;line-height:36px}
 }
-
-.sideblock-row-gen.formcls{
-    background-color: var(--gray-bgColor);
-    padding: 10px;
-    width: 640px;
+@media (max-width: 1800px) {
+.homebannerlist{margin:0;padding:0;margin-left:38%;z-index:99;position:relative;margin-top:58px;margin-left:40%}
+.homebannerlist .mat-list-item{font-size:36px;line-height:38px}
+}
+@media (max-width: 1666px) {
+.doctorimg{left:-90px!important}
+}
+@media (max-width: 1500px) {
+.homebannerlist{margin-left:42%}
+.homebannerlist .mat-list-item{font-size:31px;line-height:39px}
+.mainwrapper{width:96%}
+}
+@media (max-width: 1460px) {
+.homebannerlist{margin-left:45%}
+.homebannerlist .mat-list-item{font-size:27px;line-height:34px}
+.homebannerlist .mat-list-item img{width:80px}
+.homeblock1bg h2{line-height:22px;--max-font:32}
+}
+@media (max-width: 1366px) {
+.doctorimg{left:-140px!important}
+.homebannerlist{margin-left:42%;margin-top:80px}
+.homebannerlist .mat-list-item img{width:60px}
+.formcls .mat-card-header span{margin-bottom:10px}
+}
+@media (max-width: 1280px) {
+.homeblock1bg h2{line-height:20px;--max-font:29}
+.homebannerlist .mat-list-item{font-size:24px;line-height:32px}
+}
+@media (max-width: 1240px) {
+.doctorimg{left:-178px!important}
+.homebannerlist{margin-left:40%;margin-top:104px}
+}
+@media (max-width:1199px) {
+.homeblock1bg{padding-top:0;text-align:center}
+.homebannerlist{margin-left:auto;margin-top:20px}
+.doctorimg{height:auto;position: initial;bottom: 0;}
+.sideblock-row-gen.formcls {width: 100%;}
+.homebannerlist .mat-list-item .mat-list-item-content{display:block; text-align: left;}
+.homebannerlist .mat-list-item .mat-list-item-content{flex-wrap: wrap;align-items: center;justify-content: center;}
+.homebannerlist .mat-list-item img {width: 60px;display: block;}
+.homebannerlist .mat-list-item:nth-child(1) {padding-left: 0; text-align: left;}
+.homebannerlist .mat-list-item:nth-child(2) {padding-left: 0; text-align: left;}
+.homebannerlist .mat-list-item:nth-child(3) {padding-left: 0; text-align: left;}
+.bannerbottomright {margin-top: 40px;margin-bottom: 25px;}
+.homeblock1bg h1.text-gradient {line-height: normal;}
+}
+@media (max-width: 420px) {
+.homeblock1bg h2,.homeblock1bg h1{font-size:calc(var(--min-font) * 1px);line-height:normal}
 }

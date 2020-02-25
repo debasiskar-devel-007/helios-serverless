@@ -11,11 +11,11 @@ export class ContactUsComponent implements OnInit {
   constructor(private readonly meta: MetaService) { 
 
     this.meta.setTitle('Helios Medical Marketing - Contact Us');
-    this.meta.setTag('og:description', 'Get in touch with Helios Medical Marketing today to learn how his programs can help you or your employees in improving their performances in the workplace, as well as create better lives for themselves.');
-    this.meta.setTag('twitter:description', 'Get in touch with Helios Medical Marketing today to learn how his programs can help you or your employees in improving their performances in the workplace, as well as create better lives for themselves.');
+    this.meta.setTag('og:description', 'Contact us TODAY and submit your queries and questions, and our Support Team at Helios Medical Marketing would be happy to have them answered for you as soon as we can.');
+    this.meta.setTag('twitter:description', 'Contact us TODAY and submit your queries and questions, and our Support Team at Helios Medical Marketing would be happy to have them answered for you as soon as we can.');
 
-    this.meta.setTag('og:keyword', 'Helios Medical Marketing Contact, Contact Helios Medical Marketing, Helios Medical Marketing Contact Us');
-    this.meta.setTag('twitter:keyword', 'Helios Medical Marketing Contact, Contact Helios Medical Marketing, Helios Medical Marketing Contact Us');
+    this.meta.setTag('og:keyword', 'Helios Medical Marketing Contact Us, Contact Helios Medical Marketing, Helios Medical Marketing Contact, Helios Medical Marketing Support');
+    this.meta.setTag('twitter:keyword', 'Helios Medical Marketing Contact Us, Contact Helios Medical Marketing, Helios Medical Marketing Contact, Helios Medical Marketing Support');
 
     this.meta.setTag('og:title', 'Helios Medical Marketing - Contact Us');
     this.meta.setTag('twitter:title', 'Helios Medical Marketing - Contact Us');

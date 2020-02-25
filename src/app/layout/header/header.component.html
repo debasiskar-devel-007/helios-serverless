@@ -18,19 +18,19 @@
                 <span class="pagelogowrapper" fxFlex><a [routerLink]="['/']"><img src="https://all-frontend-assets.s3.amazonaws.com/helios/images/logo.png"
                       class="landinglogoblock1"></a></span>
                 <span class="menuwrapper">
-                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <mat-list-item fxFlex [ngClass]="router.url === '/home' ? 'active' : ''">
                     <a [routerLink]="['/home']">Home</a>
                   </mat-list-item>
-                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <mat-list-item fxFlex [ngClass]="router.url === '/medical-lists' ? 'active' : ''">
                     <a [routerLink]="['/medical-lists']">Medical Lists</a>
                   </mat-list-item>                 
-                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <mat-list-item fxFlex [ngClass]="router.url === '/how-it-works' ? 'active' : ''">
                     <a [routerLink]="['/how-it-works']">How It Works</a>
                   </mat-list-item>
-                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <mat-list-item fxFlex [ngClass]="router.url === '/geofence-features' ? 'active' : ''">
                     <a [routerLink]="['/geofence-features']">GeoFence Features</a>
                   </mat-list-item>
-                  <mat-list-item fxFlex routerLinkActive="activemenu">
+                  <mat-list-item fxFlex [ngClass]="router.url === '/contact-us' ? 'active' : ''">
                     <a [routerLink]="['/contact-us']">Contact Us</a>
                   </mat-list-item>
                 </span>
