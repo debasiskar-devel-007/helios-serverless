@@ -1,2 +1,12 @@
 .gefencebannerbginner{position: relative;}
 /* .geofencefeaturesblock1{margin-top: -5%;} */
+.innerbanner .mainwrapper{position: relative;}
+.geofencefeaturesbannerimg1{position: absolute;width: 400px;right: -7%;top: 90px;}
+
+@media screen and (max-width:1366px) {
+    .geofencefeaturesbannerimg1 {width: 300px;right: -30px;top: 155px;}
+}
+
+@media screen and (max-width:1199px) {
+    .geofencefeaturesbannerimg1 {position: inherit;width: auto;right: 0;top: 0;margin: 0 auto;display: block;}
+}
