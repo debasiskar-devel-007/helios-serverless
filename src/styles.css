@@ -308,6 +308,7 @@ img{vertical-align:middle;height:auto;width:100%}
   width: 146px;
 }
 
+
 @media (max-width: 1920px){
   .bannertextwrapper {width: 65%;}
 }  
@@ -332,7 +333,21 @@ img{vertical-align:middle;height:auto;width:100%}
   }
 
 @media (max-width: 1199px){
+  
+.homebannerlist.mat-list-base .mat-list-item .mat-list-item-content, .homebannerlist.mat-list-base .mat-list-option .mat-list-item-content{justify-content: center;}
 .flex-row-gen {flex-wrap: wrap;}
 .homeblock1bg {padding-top: 0;}
 .bannertextwrapper {width: 96%;}
+}
+
+@media (max-width: 767px){
+  .homebannerlist.mat-list-base .mat-list-item .mat-list-item-content, .homebannerlist.mat-list-base .mat-list-option .mat-list-item-content {
+    display: block;
+    text-align: center;
+  }
+  .homebannerlist .mat-list-item img {
+    width: 60px;    
+    display: block;   
+    margin: 0 auto 10px !important;
+  }
 }
