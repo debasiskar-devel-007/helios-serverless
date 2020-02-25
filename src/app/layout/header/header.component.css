@@ -45,6 +45,7 @@
 @media screen and (max-width:1199px) {
 .vpheaderwrapper .mat-nav-list .mat-list-item a,.vpheaderwrapper .mat-nav-list .mat-list-item:hover a{font-size:18px;padding:0 18px}
 .pagelogowrapper{margin-left:10%}
+.vpheaderwrapper {position: inherit !important;}
 }
 @media screen and (max-width:991px) {
 .homemain .mat-list-item{height:auto}
