@@ -28,6 +28,7 @@
 .topmenuiconlogo{display:none}
 .logowrapper img{max-width:100%}
 .active a{color:#6dd669 !important;}
+
 @media screen and (max-width:1670px) {
 .homemain .smlmenudiv{width:100%;margin:0 auto}
 .vpheaderwrapper .mat-toolbar.mat-primary{width:100%}

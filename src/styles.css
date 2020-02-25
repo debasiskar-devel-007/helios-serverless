@@ -178,6 +178,38 @@ img{vertical-align:middle;height:auto;width:100%}
 .medicallistsbg .bannertextwrapper {-webkit-transform: translateY(0%);transform: translateY(0%);}
 
 
+.fade-in {
+  animation: fadeIn ease 5s 1.5s forwards;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.animateFadeOut {
+  animation: fadeOut ease 5s 1.5s forwards;
+}
+.style {
+   font-weight: 900;
+   opacity: 0;
+ }
+  
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@keyframes fadeOut{
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+
 @media (max-width: 1199px){
 .medicallistsbg{background-image:url(assets/images/medicallistsbannerbg.jpg);min-height:inherit;height:auto;padding-top:55%!important;background-size:190%;background-position:top right;background-repeat:no-repeat;background-color:#17283e;padding-bottom:10px!important}
 .bannertextwrapper{text-align:center;width:96%;position:inherit;top:0;left:0;-webkit-transform:inherit;transform:inherit;margin-left:auto;margin-right:auto}
@@ -284,6 +316,20 @@ img{vertical-align:middle;height:auto;width:100%}
 .mainwrapper {margin: 0 auto;width: 96%;}
 .bannertextwrapper {width: 60%;}
 }
+
+@media (max-width: 1440px){
+.homeblock1bg .formcls .mat-card-header h2{
+    line-height: 42px !important;
+    --max-font: 32;
+  }
+}
+
+@media (max-width: 1366px){
+  .homeblock1bg .formcls .mat-card-header h2{
+      line-height: 24px !important;
+      --max-font: 32;
+    }
+  }
 
 @media (max-width: 1199px){
 .flex-row-gen {flex-wrap: wrap;}
