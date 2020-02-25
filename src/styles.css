@@ -123,6 +123,7 @@ img{vertical-align:middle;height:auto;width:100%}
 .mat-card{font-family: var(--main-font) !important;}
 
 .mainwrapper{width:var(--wrapper-1460); margin: 0 auto;}
+
 @media (max-width: 1200px) {
     .mainwrapper{width:96%; margin: 0 auto;}
 }
@@ -256,17 +257,97 @@ img{vertical-align:middle;height:auto;width:100%}
 
 /******** home page css ********/
 .homemain .mat-list-item .mat-list-item-content{padding: 0 !important;}
+
 .homeblock1bg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homeblock1bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 936px;}
 
-.gefencebannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/gefencebannerbg.png') no-repeat top right;background-size: 100%;
-padding: 0;border-radius: var(--border-radius-0);height: 635px;box-shadow: none;min-height: inherit;}
 
-.howitworksbannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbannerbg.jpg') no-repeat top right;background-size: 100%;
-padding: 0;border-radius: var(--border-radius-0);height: 540px;box-shadow: none;min-height: inherit;}
-
-.medicallistsbannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/medicallistsbannerbg.jpg') no-repeat top right;background-size: 100%;
-padding: 0;border-radius: var(--border-radius-0);height: 540px;box-shadow: none;min-height: inherit;}
+/* .innerbanner{
     
+} */
+.medicallistsbg{
+    background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/medicallistsbannerbg.jpg) no-repeat top center;min-height: 548px; padding: 0; padding-top: 172px !important; position: relative !important; background-repeat: no-repeat; background-size: cover;
+}
+.gefencebannerbg{
+    background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/gefencebannerbg.jpg) no-repeat top center;min-height: 548px; padding: 0; padding-top: 252px !important; position: relative !important; background-repeat: no-repeat; background-size: cover;
+}
+.howitworksbannerbg{
+    background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbannerbg.jpg) no-repeat top center;min-height: 548px; padding: 0; padding-top: 252px !important; position: relative !important; background-repeat: no-repeat; background-size: cover;
+}
+
+
+.bannertextwrapper {width: 74%;}
+.bannertextwrapper h2 {
+        line-height: normal;
+    padding-top: 0;
+    padding-bottom: 0;
+    --max-font: 46;
+    --min-font: 23;
+    font-family: var(--main-bold-font);
+    font-size: var(--responsive);
+    margin: 10px 0;    
+    line-height: normal;
+}
+.bannertextwrapper h2 span{
+    display: block;
+    --max-font: 36;
+    --min-font: 18;
+    font-family: var(--main-bold-font);
+    font-size: var(--responsive);
+}
+.bannertextwrapper p {
+    margin: 0;
+    line-height: 38px;
+    color: var(--main-txt-color);
+    --max-font: 24;
+    --min-font: 13;
+    font-family: var(--main-font);
+    font-size: var(--responsive);
+}    
+
+@media (max-width: 1199px){
+   
+    .medicallistsbg {
+        background-image: url(assets/images/medicallistsbannerbg.jpg);
+        min-height: inherit;
+        height: auto;
+        padding-top: 55% !important;
+        background-size: 190%;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-color: #17283e;
+        padding-bottom: 10px !important;
+   }
+   .bannertextwrapper {
+        width: 100%;
+        text-align: center;
+    }
+   
+    .gefencebannerbg {
+        background-image: url(assets/images/gefencebannerbg.jpg);
+        min-height: inherit;
+        height: auto;
+        padding-top: 55% !important;
+        background-size: 190%;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-color: #0a1c24;
+        padding-bottom: 10px !important;
+   }
+
+   .howitworksbannerbg {
+    background-image: url(assets/images/howitworksbannerbg.jpg);
+    min-height: inherit;
+    height: auto;
+    padding-top: 55% !important;
+    background-size: 190%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #0a1c24;
+    padding-bottom: 10px !important;
+}
+
+
+}
    
 
 .formcls .mat-card-header {
@@ -429,6 +510,13 @@ padding: 0;border-radius: var(--border-radius-0);height: 540px;box-shadow: none;
 .generalmodalcls .mat-form-field-flex{display:block!important;border:none!important;padding:0!important}
 
 
+
+
+
+
+
+
+
 @media (max-width: 1280px){
     .formcls .mat-form-field-appearance-legacy .mat-form-field-label {
         top: 8px;
@@ -496,120 +584,10 @@ padding: 0;border-radius: var(--border-radius-0);height: 540px;box-shadow: none;
 }
 
 
-@media (max-width: 1900px){
-    .gefencebannerbg.mat-card {
-           height: 608px;
-    }
-    .howitworksbannerbg.mat-card {
-        height: 530px;
-    }
-    .gefencebannerbg.mat-card {
-        height: 635px;
-    }
-    .geofencefeaturesblock1 {
-        margin-top: -6%;
-    }
-}
 
-@media (max-width: 1860px){
-    .medicallistsbannerbg.mat-card {
-        background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/medicallistsbannerbg.jpg) no-repeat top center;
-        background-size: 106%;
-    }
-    
-    .gefencebannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/gefencebannerbg.png') no-repeat top right;background-size: 100%;
-    padding: 0;border-radius: var(--border-radius-0);height: 648px;box-shadow: none;min-height: inherit;}
-    
-    .howitworksbannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbannerbg.jpg') no-repeat top right;background-size: 100%;
-    padding: 0;border-radius: var(--border-radius-0);height: 548px;box-shadow: none;min-height: inherit;}
-    .gefencebannerbg.mat-card {
-        height: 608px;
-    }
-    .howitworksbannerbg.mat-card {
-        height: 525px;
-    }
-}
 
-@media (max-width: 1800px){
-    .medicallistsbannerbg.mat-card {
-        background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/medicallistsbannerbg.jpg) no-repeat top center;
-        background-size: 115%;
-    }
-    
-    .gefencebannerbg.mat-card {
-        background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/gefencebannerbg.png) no-repeat top center;
-        background-size: 105%;
-    }
-    
-    .gefencebannerbg.mat-card {
-        height: 590px;
-    }
-    
-    .howitworksbannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbannerbg.jpg') no-repeat top center;
-        background-size: 115%;
-    }
-}
 
-@media (max-width: 1700px){
-    .gefencebannerbg.mat-card {
-        background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/gefencebannerbg.png) no-repeat top center;
-        background-size: 109%;
-    }
-    .medicallistsbannerbg.mat-card {
-        background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/medicallistsbannerbg.jpg) no-repeat top center;
-        background-size: 128%;
-    }
-    
-    
-    .howitworksbannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbannerbg.jpg') no-repeat top center;
-        background-size: 118%;
-    }   
-}
-@media (max-width: 1660px){
-.gefencebannerbg.mat-card {
-    background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/gefencebannerbg.png) no-repeat top center;
-    background-size: 115%;
-}
-}
-@media (max-width: 1600px){
-    .medicallistsbannerbg.mat-card {
-        background: url(https://all-frontend-assets.s3.amazonaws.com/helios/images/medicallistsbannerbg.jpg) no-repeat top center;
-        background-size: 120%;
-    }
-    
-    .gefencebannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/gefencebannerbg.png') no-repeat top center;
-        background-size: 117%;
-    }
- 
-    .howitworksbannerbg.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbannerbg.jpg') no-repeat top center;
-        background-size: 123%;
-    }
-}
 
-@media (max-width: 1500px){
-    .gefencebannerbg.mat-card {
-        height: 564px;
-    }
-    .medicallistsbannerbg.mat-card {
-        height: 500px;
-    }
-    .geofencefeaturesblock1 {
-        margin-top: -4%;
-    }
-    
-    /* .gefencebannerbg.mat-card {
-        height: 520px;
-    } */
-    
-.howitworksbannerbg.mat-card{
-    height: 428px;
-}
 
-}
 
-@media (max-width: 1366px){
-    .gefencebannerbg.mat-card {
-        height: 538px;
-    }
 
-}
