@@ -19,6 +19,15 @@
 .border3 { position: absolute; right: 34.5%; top: 50%; transform: translate(-50%, -50%);}
 .threecolumnlist .mat-list-item .mat-list-item-content {align-items: stretch !important; height: 100% !important}
 
+@media screen and (max-width:1660px) {
+.geofencefeaturesbannerimg1 {position: absolute;width: 400px;right: 0%;
+top: 120px;}
+}
+@media screen and (max-width:1500px) {
+.geofencefeaturesbannerimg1 {position: absolute;width: 314px;right: -2%;
+top: 170px;}
+}
+
 @media screen and (max-width:1366px) {
     .geofencefeaturesbannerimg1 {width: 300px;right: -30px;top: 155px;}
 }
