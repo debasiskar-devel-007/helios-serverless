@@ -1,2 +1,24 @@
 .medicallistsbannerbg{position: relative;}
 .innerbanner .mainwrapper{position: relative;}
+
+.medicallists2wrapper .flex-row-gen{
+    margin-top: 37px;
+}
+
+
+
+.medicallists3bgcolor{
+    background-color: #eff7f8;
+    padding: 28px;
+    border:1px solid #dce7e8;
+    margin: 30px 5px 0px 5px;
+}
+
+@media (max-width: 1199px) {
+    .medicallists2wrapper .flex-row-gen {
+        justify-content: center;
+    }
+    .medicallists3bgcolor {
+        width: 100%;
+    }
+}
