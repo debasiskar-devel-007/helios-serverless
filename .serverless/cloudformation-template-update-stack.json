@@ -146,7 +146,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/helios-serverless/production/1582723410820-2020-02-26T13:23:30.820Z/helios-serverless.zip"
+          "S3Key": "serverless/helios-serverless/production/1582725324634-2020-02-26T13:55:24.634Z/helios-serverless.zip"
         },
         "FunctionName": "helios-serverless-production-api",
         "Handler": "lambda.universal",
@@ -165,14 +165,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "ApiLambdaVersionnZquPZ7Df9PZCDX5xx5C7muksDoCJh7bb9lUJzif8": {
+    "ApiLambdaVersionTKbrvhFo3VZyLZbRRDMyafxnwxnlbnGnI47BuZYk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ApiLambdaFunction"
         },
-        "CodeSha256": "1xdmehVofiQp0WeDm7rT1tKdfiMx5Wzbzd2HU2zt6FY="
+        "CodeSha256": "mJ8iuAcAGAT4WTeWcz96SDy9JxT1JgqMbOKuVYRTiDg="
       }
     },
     "ApiGatewayRestApi": {
@@ -291,7 +291,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1582723377200": {
+    "ApiGatewayDeployment1582725291294": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -351,7 +351,7 @@
     "ApiLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ApiLambdaVersionnZquPZ7Df9PZCDX5xx5C7muksDoCJh7bb9lUJzif8"
+        "Ref": "ApiLambdaVersionTKbrvhFo3VZyLZbRRDMyafxnwxnlbnGnI47BuZYk"
       }
     },
     "ServiceEndpoint": {
