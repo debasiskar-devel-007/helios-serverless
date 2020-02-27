@@ -1,6 +1,8 @@
 .gefencebannerbginner{position: relative;}
 .innerbanner .mainwrapper{position: relative;}
-.geofencefeaturesbannerimg1{position: absolute;width: 400px;right: -7%;top: 90px;}
+
+
+
 
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 :host /deep/ .geofencefeatures1wrapper .equalHMRWrap .mat-list-item .mat-list-item-content{flex-direction:column}
