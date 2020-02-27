@@ -92,7 +92,7 @@
   --font-size-h1:            calc((var(--font-size-base) * 3.4)); /*-48px-*/
   --font-size-h2:            calc((var(--font-size-base) * 2.15)); /*-30px-*/
   --font-size-h3:            calc((var(--font-size-base) * 1.7)); /*-24px-*/
-  --font-size-h4-20:            calc((var(--font-size-base) * 1.5)); /*-20px-*/
+  --font-size-h4-20:         calc((var(--font-size-base) * 1.5)); /*-20px-*/
   --font-size-h4:            calc((var(--font-size-base) * 1.25)); /*-18px-*/
   --font-size-h5:            var(--font-size-base);
   --font-size-h6:            calc((var(--font-size-base) * 0.85));  /*-12px-*/
@@ -435,7 +435,7 @@ img{vertical-align:middle;height:auto;width:100%}
   .homesection2wrapper.mat-card{background-image: url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homeblock2bg.jpg');
     min-height: inherit;
     height: auto;
-    padding-top: 65%!important;
+    padding-top: 68%!important;
     background-size: 189% !important;
     background-position: top right;
     background-repeat: no-repeat;
@@ -455,7 +455,7 @@ img{vertical-align:middle;height:auto;width:100%}
 }
   
 
-.homesection5wrapper.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homesection5bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 562px;}
+.homesection5wrapper.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homesection5bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 582px;}
 
 @media (max-width: 1199px){
   .homesection5wrapper.mat-card{
@@ -466,9 +466,14 @@ img{vertical-align:middle;height:auto;width:100%}
 }
 
 
-.homesection5wrapper.mat-card .flex-row-gen{align-items: center; width: 100%;}
+.homesection5wrapper.mat-card .flex-row-gen{        width: 89%;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 11%;}
 
-.homesection5wrappercontent{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homesection5wrappercontent.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: 15px;min-height: 562px; order: 1;}
+.homesection5wrappercontent{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homesection5wrappercontent.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: 15px;min-height: 582px; order: 1;}
 
 
 .homesection3wrapper .mat-list .mat-list-item{font-size: 20px;font-family: var(--main-font);margin-bottom: 5px;float: left;margin-top: 8px; width: 100% !important;}
