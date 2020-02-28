@@ -41,8 +41,10 @@
 
   --white-color-txt:#fff;
   --black-color-txt:#000;
+  --blue-color-txt:#043878;
   --green-color-txt:#38c332;
   --gray-color-txt:#2e2f2f;
+  --gray-color-txt1:#515151;
 
   --link-color:#000;
   --link-hover-color:#000;
@@ -87,12 +89,13 @@
   --font-size-large:calc((var(--font-size-base) * 1.25)); /*18px*/
   --font-size-small:calc((var(--font-size-base) * 0.85)); /*12px*/
 
-  --font-size-h1:            calc((var(--font-size-base) * 3.4)); /*-48px-*/
-  --font-size-h2:            calc((var(--font-size-base) * 2.15)); /*-30px-*/
+  --font-size-h1:            calc((var(--font-size-base) * 3.4)); /*-48px-*/  
+  --font-size-h2-36:         calc((var(--font-size-base) * 2.40)); /*-36px-*/
+  --font-size-h2:            calc((var(--font-size-base) * 2.10)); /*-30px-*/
   --font-size-h3:            calc((var(--font-size-base) * 1.7)); /*-24px-*/
   --font-size-h4-20:         calc((var(--font-size-base) * 1.5)); /*-20px-*/
   --font-size-h4:            calc((var(--font-size-base) * 1.25)); /*-18px-*/
-  --font-size-h5:            var(--font-size-base);
+  --font-size-h5:            var(--font-size-base);/*-14px-*/
   --font-size-h6:            calc((var(--font-size-base) * 0.85));  /*-12px-*/
 
 }
@@ -108,14 +111,39 @@ h1 {
 h2 {
   --max-font: 30;
   --min-font: 15;
+  font-family: var(--main-bold-font);
+  font-size: var(--responsive);
 }
+
+.iconlist1content h2{
+  --max-font: 24;
+  --min-font: 14;
+  font-family: var(--main-font);
+  font-size: var(--responsive);
+}
+
+
+h3 {
+  --max-font: 30;
+  --min-font: 18;
+  font-family: var(--main-bold-font);
+  font-size: var(--responsive);
+}
+
+.mat-list-base .mat-list-item {
+  --max-font: 18;
+  --min-font: 14;
+  font-family: var(--main-font);
+  font-size: var(--responsive);
+}
+
 
 .sectioncss h1{
   font-family: var(--main-bold-font); 
-  text-transform: capitalize;  
+  text-transform: uppercase;  
   text-align: center;
   padding: 0; 
-  margin: 0;
+  margin: 0;  
 }
 .sectioncss p{
   font-family: var(--main-font); 
@@ -130,8 +158,7 @@ h2 {
   padding: 0; 
   margin: 0;
   margin-top: 10px;
-  font-size: var(--font-size-h2);
-  
+  font-size: var(--font-size-h2);  
 }
 
 h1.text-gradient {
@@ -547,6 +574,7 @@ img{vertical-align:middle;height:auto;width:100%}
     background-repeat: no-repeat;
     background-color: #fff;
     padding-bottom: 36px!important;}
+
 }
 
 
@@ -597,16 +625,80 @@ img{vertical-align:middle;height:auto;width:100%}
 
 
 
+.howitworksbloc1.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksblock1bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 1px; font-size: var(--responsive);}
+@media (max-width: 1666px){.howitworksbloc1.mat-card {background-position: top right 58%;}}
+@media (max-width: 1366px){
+  .howitworksblockimgwrapper {width: 390px;height: auto;}
+  .howitworksb1wrapper .sideblock-row-gen {margin-left: 30px !important;}
+}
+@media (max-width: 1199px){
+  .howitworksbloc1.mat-card {
+      min-height: inherit;
+      height: auto;
+      padding-top: 75%!important;
+      background-size: 205% !important;
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-color: #f9fafa;
+      padding-bottom: 36px!important;
+  }
+  
+}
+
+
+.howitworksbloc2.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksblock2bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 1px; font-size: var(--responsive);}
+
+@media (max-width: 1666px){.howitworksbloc2.mat-card {background-position: top right 50%;}}
+
+@media (max-width: 1199px){
+  .howitworksbloc2.mat-card {
+    min-height: inherit;
+    height: auto;
+    padding-top: 65%!important;
+    background-size: 200% !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    padding-bottom: 36px!important;
+  }
+  
+}
+
+
+.howitworksbloc3.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksblock3bg.jpg') no-repeat top center;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 1px; font-size: var(--responsive);
+    padding-bottom: 0 !important;}
+
+@media (max-width: 1666px){.howitworksbloc3.mat-card {background-position: top right;}}
+
+@media (max-width: 1199px){
+  .howitworksbloc3.mat-card {
+    min-height: inherit;
+    height: auto;
+    padding-top: 65%!important;
+    background-size: 200% !important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: #ecf2f7;
+    padding-bottom: 36px!important;
+  }
+  
+}
+
+.howitworksb5wrapperinner.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksbloc5bg.jpg') no-repeat bottom left;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 1px; font-size: var(--responsive);
+  padding-bottom: 0 !important;}
+
+
 @media (max-width: 1920px){
   .bannertextwrapper {width: 65%;}
 }  
 
 @media (max-width: 1666px){
-.mainwrapper {margin: 0 auto;width: 96%;}
+
 .bannertextwrapper {width: 60%;}
 }
 
 @media (max-width: 1440px){
+  .mainwrapper {margin: 0 auto;width: 96%;}
 .homeblock1bg .formcls .mat-card-header h2{
     line-height: 42px !important;
     --max-font: 32;
@@ -666,6 +758,10 @@ img{vertical-align:middle;height:auto;width:100%}
 
 .sectioncss .medicallists3bgcolor h2 {text-align: left !important;color: #111111 !important; margin-bottom: 10px !important;}
 .sectioncss .medicallists3bgcolor h2 span{font-family: var(--main-font);}
+
+.iconlist-middle-img{
+  background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/iconlist-middle-img.jpg') no-repeat bottom left;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 1px; font-size: var(--responsive);padding-bottom: 0 !important;
+}
 
   /* --line-height-base:        1.428571429;  20/14
   --headings-font-family:    inherit;
