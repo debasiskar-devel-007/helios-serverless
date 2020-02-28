@@ -343,10 +343,7 @@ img{vertical-align:middle;height:auto;width:100%}
     top: 90px;
     z-index: 99;
   }
-  .homesection2wrapper h2 {
-      width: 70%;
-  }
-  .homesection2wrapper h2 br{display: none;}
+  
   }
   /* @media (max-width:1366px) {
   .gefencebannerbg {
