@@ -328,6 +328,13 @@ img{vertical-align:middle;height:auto;width:100%}
   z-index: 99;
 }
 
+
+@media (max-width:1920px) {
+  .homesection2wrapper.mat-card {
+    background-position: top right 40% !important;
+  }
+}
+
 @media (max-width:1666px) {
   .geofencefeaturesbannerimg1 {
     position: absolute;
@@ -336,6 +343,10 @@ img{vertical-align:middle;height:auto;width:100%}
     top: 90px;
     z-index: 99;
   }
+  .homesection2wrapper h2 {
+      width: 70%;
+  }
+  .homesection2wrapper h2 br{display: none;}
   }
   /* @media (max-width:1366px) {
   .gefencebannerbg {
