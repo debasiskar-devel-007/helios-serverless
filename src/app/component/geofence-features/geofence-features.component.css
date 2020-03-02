@@ -3,6 +3,7 @@
 .iconlist1content h2{text-transform:capitalize;color:var(--green-color-txt);margin-top: 20px;margin-bottom: 17px;}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 :host /deep/ .geofencefeatures1wrapper .equalHMRWrap .mat-list-item .mat-list-item-content{flex-direction:column;padding:0!important}
+.geofencefeatures1wrapper .equalHMRWrap {margin-top: 35px;}
 .eq{padding:10px}
 .equalHMRWrap{justify-content:flex-start;flex-wrap:wrap}
 .eqWrap{display:flex;flex-wrap:wrap}
