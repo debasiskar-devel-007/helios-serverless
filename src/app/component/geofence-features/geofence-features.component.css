@@ -1,6 +1,6 @@
 .gefencebannerbginner{position:relative}
 .innerbanner .mainwrapper{position:relative}
-.iconlist1content h2{text-transform:capitalize;color:var(--green-color-txt)}
+.iconlist1content h2{text-transform:capitalize;color:var(--green-color-txt);margin-top: 20px;margin-bottom: 17px;}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 :host /deep/ .geofencefeatures1wrapper .equalHMRWrap .mat-list-item .mat-list-item-content{flex-direction:column;padding:0!important}
 .eq{padding:10px}
@@ -21,7 +21,7 @@
 .equalHMR:nth-child(3n + 3):after{background:-webkit-linear-gradient(right,rgba(255,0,0,0),rgba(0,0,0,1))!important;position:absolute;right:0;bottom:0;content:'';display:block;width:100%;height:1px}
 .equalHMR:nth-child(3n + 2):after{background:-webkit-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,1))!important;position:absolute;right:0;bottom:0;content:'';display:block;width:100%;height:1px}
 .equalHMR:nth-child(3n+1)::before:nth-last-child(-n+3),.equalHMR:nth-child(3n+1)::before:nth-last-child(-n+3) ~ .equalHMR:before{background:none!important}
-.equalHMRWrap:after{background-color:#fff;position:absolute;right:0;bottom:45px;content:'';display:block;width:100%;height:2px}
+.equalHMRWrap:after{background-color: #fff;position: absolute;right: 0;bottom: 42px;content: '';display: block;width: 100%;height: 5px;}
 .iconlist-middle-img-cls{display:none}
 @media screen and (max-width:991px) {
 .equalHMR{width:50%!important}
