@@ -1,7 +1,7 @@
 .howitworksbannerbg{position:relative}
 .innerbanner .mainwrapper{position:relative}
 .mat-list-base{width:97%}
-.mat-list-base .mat-list-item{background:url(https://all-frontend-assets.s3.amazonaws.com/helios/images/listicon-4box.png) no-repeat top 5px left;padding-left:30px;height:auto;margin-top:20px;color:var(--gray-color-txt)}
+.mat-list-base .mat-list-item{background:url(https://all-frontend-assets.s3.amazonaws.com/helios/images/listicon-4box.png) no-repeat top 5px left;padding-left:28px;height:auto;margin-top:20px;color:var(--gray-color-txt)}
 .mat-list-base .mat-list-item:first-child{margin-top:0!important}
 .main-row-gen{margin-left:24%}
 .sideblock-row-gen{margin-left:58px}
@@ -40,7 +40,7 @@ h1{text-align:left;margin-bottom:20px}
 .howitworksblock5imgwrapper img{max-width:100%;display:block}
 .howitworksb5wrapper .sideblock-row-gen{margin-left:15px;margin-right:-15%}
 .howitworksb5wrapper .main-row-gen{margin-left:0;margin-left:0}
-.howitworksbloc5 .mat-list-base .mat-list-item{background:url(https://all-frontend-assets.s3.amazonaws.com/helios/images/listicon-arrow.png) no-repeat top 5px left;padding-left:30px;height:auto;margin-top:20px;color:var(--gray-color-txt);z-index:99;position:relative}
+.howitworksbloc5 .mat-list-base .mat-list-item{background:url(https://all-frontend-assets.s3.amazonaws.com/helios/images/listicon-arrow.png) no-repeat top left;padding-left:36px;height:auto;margin-top:20px;color:var(--gray-color-txt);z-index:99;position:relative}
 .howitworksbloc5 .mat-list-base .mat-list-item:first-child{margin-top:0!important}
 .howitworksbloc5.sectioncss h2{color:#4b5155;text-align:left;max-width:65%;margin-bottom:10px}
 .howitworksb5wrapperinner{margin-top:-3%}
@@ -60,6 +60,11 @@ h1{text-align:left;margin-bottom:20px}
 .howitworksblockimgwrapper{width:390px;height:auto}
 .howitworksb1wrapper .sideblock-row-gen{margin-left:30px!important}
 .howitworksblock2imgwrapper{width:464px;height:auto}
+.howitworksblock5imgwrapper {width: 745px;height: auto;}
+.howitworksbloc5.sectioncss h2 {max-width: 90%;}
+}
+@media (max-width: 1280px) {
+.howitworksblock5imgwrapper {width: 680px;}
 }
 @media (max-width: 1199px) {
 h1{text-align:center;margin-bottom:20px;margin-top:32px}

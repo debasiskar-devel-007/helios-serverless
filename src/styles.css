@@ -441,6 +441,7 @@ img{vertical-align:middle;height:auto;width:100%}
 
 @media (max-width: 1280px){
   .formcls .mat-form-field-appearance-legacy .mat-form-field-label {top: 8px;font-size: 14px;}
+  .bannertextwrapper p {line-height: normal;}
 }
 
 .bannerbottomright{
