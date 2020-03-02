@@ -110,6 +110,8 @@
 .helioshomeblock5imgwrapper{width:488px}
 }
 @media (max-width:1199px) {
+.homebannerlist .mat-list-item {margin-bottom: 10px;}
+.homebannerlist .mat-list-item:last-child{margin-bottom: 20px;}
 .homesection2wrapper h2{width:100%}
 .homesection2wrapper h2 br{display:none}
 :host /deep/ .homesection4wrapper .flex-row-gen .mat-list-item-content{padding:5px;height:100%;text-align:center;display:block}
