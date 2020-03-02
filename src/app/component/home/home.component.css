@@ -60,6 +60,9 @@
 .homebannerlist .mat-list-item{font-size:36px;line-height:38px}
 }
 @media (max-width: 1666px) {
+    .doctorimg{
+        height: 720px;
+    }
 .homesection2wrapper h2{width:70%}
 .homesection2wrapper h2 br{display:none}
 .doctorimg{left:-90px!important}
