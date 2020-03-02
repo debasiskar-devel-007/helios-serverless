@@ -10,16 +10,16 @@
 .howitworksb1wrapper .sideblock-row-gen h2{text-align:left}
 .howitworksblockimgwrapper{width:518px;height:548px;overflow:hidden;display:block}
 .howitworksblockimgwrapper img{max-width:100%;display:block}
-.howitworksblock2imgwrapper{width:658px;height:486px;overflow:hidden;display:block}
+.howitworksblock2imgwrapper{width: 484px;height: auto;overflow: hidden;display: block;}
 .howitworksblock2imgwrapper img{max-width:100%;display:block}
 .howitworksblock3imgwrapper{width:401px;height:689px;overflow:hidden;display:block;margin-top:68px;margin-right:0}
 .howitworksblock3imgwrapper img{max-width:100%;display:block}
 .howitworksb2wrapper .sideblock-row-gen{margin-right:25%;margin-left:0}
-.howitworksb2wrapper .main-row-gen{margin-right:27px;margin-left:0}
-.howitworksb3wrapper .main-row-gen{margin-left:0}
+.howitworksb2wrapper .main-row-gen{margin-right:27px;margin-left:0;flex: 1 1 auto;}
+.howitworksb3wrapper .main-row-gen{margin-left:0;flex: 1 1 auto;}
 .howitworksb3wrapper .howitworksb3wrapperbottominner .main-row-gen h1{text-align:left;margin-bottom:0;color:var(--blue-color-txt)}
 .howitworksb3wrapperinner{justify-content:space-between;margin-top:40px}
-.sideblock-row-gen{margin-left:15px}
+.sideblock-row-gen{margin-left:15px;flex: 1 1 auto;}
 .howitworksb3wrapper h3{margin:0!important;text-transform:uppercase;position:relative;padding-bottom:10px}
 .howitworksb3wrapper h3:after{position:absolute;bottom:0;left:0;right:0;bottom:0;content:'';display:block;background:-webkit-linear-gradient(right,rgba(255,0,0,0),rgba(50,123,8,1));height:1px}
 .sectioncss .howitworksb3wrapper p{text-align:left;margin:0;margin-top:10px}
@@ -52,7 +52,7 @@ h1{text-align:left;margin-bottom:20px}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eff2f2',GradientType=0 ); /* ie6-9 */}
 
 
-.howitworksb5wrapperinner{margin-top:-3%}
+.howitworksb5wrapperinner{margin-top:0}
 @media (max-width: 1900px) {
 .howitworksb5wrapper .sideblock-row-gen{margin-left:15px;margin-right:-5%}
 }
@@ -76,6 +76,9 @@ h1{text-align:left;margin-bottom:20px}
 .howitworksblock5imgwrapper {width: 680px;}
 }
 @media (max-width: 1199px) {
+.howitworksblock3imgwrapper {margin-right: auto;margin-left: auto;height: auto;margin-top: 30px;}
+.howitworksblock2imgwrapper {width: 464px;height: auto;margin: 0 auto;}
+.main-row-gen {margin-left: auto;margin-right: auto;}
 h1{text-align:center;margin-bottom:20px;margin-top:32px}
 .howitworksb2wrapper .main-row-gen{-webkit-box-ordinal-group:2;order:2}
 .howitworksb2wrapper .sideblock-row-gen{-webkit-box-ordinal-group:1;order:1;margin-right:auto;margin-left:auto!important}
