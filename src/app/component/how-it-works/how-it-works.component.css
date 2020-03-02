@@ -43,6 +43,15 @@ h1{text-align:left;margin-bottom:20px}
 .howitworksbloc5 .mat-list-base .mat-list-item{background:url(https://all-frontend-assets.s3.amazonaws.com/helios/images/listicon-arrow.png) no-repeat top left;padding-left:36px;height:auto;margin-top:20px;color:var(--gray-color-txt);z-index:99;position:relative}
 .howitworksbloc5 .mat-list-base .mat-list-item:first-child{margin-top:0!important}
 .howitworksbloc5.sectioncss h2{color:#4b5155;text-align:left;max-width:65%;margin-bottom:10px}
+.howitworksbloc4 {background: -moz-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(239,242,242,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(239,242,242,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(239,242,242,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(239,242,242,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(239,242,242,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(239,242,242,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eff2f2',GradientType=0 ); /* ie6-9 */}
+
+
 .howitworksb5wrapperinner{margin-top:-3%}
 @media (max-width: 1900px) {
 .howitworksb5wrapper .sideblock-row-gen{margin-left:15px;margin-right:-5%}
