@@ -135,7 +135,8 @@
 .homesection2wrapper .mat-list-base{width:100%}
 .homesection2wrapper .mat-list-base .mat-list-item{margin-top:20px;padding-left:0}
 .homesection4wrapper h1{text-align:center}
-.homesection4wrapper h2{text-align:center}
+.homesection4wrapper h2{text-align:center;margin-top: 15px;}
+.homesection4wrapper h2 br{display: none;}
 .homesection4wrapper .mat-list-base{width:100%}
 .homesection4wrapper .flex-row-gen .sideblock-gen{margin:20px auto 0}
 .homesection4wrapper h3{text-align:center;font-size:30px}

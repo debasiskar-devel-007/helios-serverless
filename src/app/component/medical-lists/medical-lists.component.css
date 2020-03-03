@@ -21,4 +21,8 @@
     .medicallists3bgcolor {
         width: 100%;
     }
+    .medicallists3bgcolor {padding: 10px;}
+}
+@media (max-width: 767px) {
+    :host /deep/ .mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {flex-wrap: wrap;}
 }
