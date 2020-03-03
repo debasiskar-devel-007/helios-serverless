@@ -535,7 +535,7 @@ img{vertical-align:middle;height:auto;width:100%}
 }
 }
 @media (max-width: 1199px){
-  .homesection2wrapper.mat-card{background-image: url('https://all-frontend-assets.s3.amazonaws.com/helios/images/homeblock2bg.jpg');
+  .bigdatapartnerintblock2.mat-card{
     min-height: inherit;
     height: auto;
     padding-top: 68%!important;
@@ -677,7 +677,9 @@ img{vertical-align:middle;height:auto;width:100%}
 
 .howitworksbloc2.mat-card{background:url('https://all-frontend-assets.s3.amazonaws.com/helios/images/howitworksblock2bg.jpg') no-repeat top right;background-size: cover;padding: 0;border-radius: var(--border-radius-0);min-height: 500px; font-size: var(--responsive);}
 
-@media (max-width: 1666px){.howitworksbloc2.mat-card {background-position: top right 50%;}}
+@media (max-width: 1666px){
+  .howitworksbloc2.mat-card {background-position: top right 30%;}
+}
 
 @media (max-width: 1199px){
   
@@ -789,6 +791,8 @@ img{vertical-align:middle;height:auto;width:100%}
     background-color: #021423;
     padding-bottom: 36px!important;
 }
+  .formcls .example-container {padding: 12px 10px;}
+  
   .homebannerlist.mat-list-base .mat-list-item .mat-list-item-content, .homebannerlist.mat-list-base .mat-list-option .mat-list-item-content {
     display: block;
     text-align: center;

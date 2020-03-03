@@ -29,5 +29,9 @@
 .contactusbgbannerbginner h1.text-gradient{line-height:normal}
 }
 @media screen and (max-width:767px) {
+    .contactusbgbannerbginner .formcls .mat-card-header{padding: 23px 12px 20px;}
+    .contactusbgbannerbginner .formcls .mat-card-header h2 {padding-top: 0px;}
+    
+    .contactusbgbannerbginner h2 {--min-font: 24;}
 .imgcontactusleftwrappercontent p{white-space:normal;word-break:break-word}
 }
