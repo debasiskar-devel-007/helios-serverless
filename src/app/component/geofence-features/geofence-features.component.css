@@ -44,4 +44,6 @@
 .equalHMR{width:100%!important}
 .iconlist-middle-img{background:none}
 .iconlist-middle-img-cls{display:block}
+.geofencefeatures1wrapper .equalHMRWrap {margin-top: 20px;padding-top: 0;}
+.geofencefeatures1wrapper.sectioncss .equalHMR p{margin-bottom: 0;}
 }

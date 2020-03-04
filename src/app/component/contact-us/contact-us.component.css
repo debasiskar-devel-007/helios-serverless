@@ -20,18 +20,22 @@
 .imgcontactusleftwrapperimg div.mapwrapper{-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.4),0 0 0 5px rgba(0,0,0,0.2);-moz-box-shadow:inset 0 0 5px rgba(0,0,0,0.4),0 0 0 5px rgba(0,0,0,0.2);box-shadow:inset 0 0 5px rgba(0,0,0,0.4),0 0 0 5px rgba(0,0,0,0.2)}
 @media (max-width:1199px) {
 .contactusbgbannerbginner{padding-top:0;text-align:center}
-.sideblock-row-gen.formcls{width:100%!important;margin:20px auto}
+.sideblock-row-gen.formcls{width:100%!important;margin:20px auto 30px;}
 .imgcontactusleftwrapper{flex-wrap:wrap}
 .imgcontactusleftwrapperimg{width:100%}
 .imgcontactusleftwrappercontent{margin-left:auto;margin-right:auto;margin-top:20px}
 .imgcontactusleftwrappercontent p a{margin-top:10px!important}
 .contactusbgbannerbginner h2{margin:0;line-height:normal}
 .contactusbgbannerbginner h1.text-gradient{line-height:normal}
+.imgcontactusleftwrapper {margin-top: 20px;}
 }
 @media screen and (max-width:767px) {
     .contactusbgbannerbginner .formcls .mat-card-header{padding: 23px 12px 20px;}
     .contactusbgbannerbginner .formcls .mat-card-header h2 {padding-top: 0px;}
-    
+    .contactusbgbannerbginner .homebannersection { margin-top: 20px!important;}
     .contactusbgbannerbginner h2 {--min-font: 24;}
-.imgcontactusleftwrappercontent p{white-space:normal;word-break:break-word}
+.imgcontactusleftwrappercontent p{white-space:normal;word-break:break-word;--min-font: 20;}
+}
+@media screen and (max-width:640px) {
+    .imgcontactusleftwrappercontent p a {font-size: 22px; }
 }

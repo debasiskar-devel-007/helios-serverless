@@ -45,6 +45,7 @@
 .vpheaderwrapper .mat-nav-list .mat-list-item a{font-size:20px;padding:0 16px}
 }
 @media screen and (max-width:1199px) {
+.homemain .mat-list-item:first-child {margin-left: 0;}
 .vpheaderwrapper .mat-nav-list .mat-list-item a,.vpheaderwrapper .mat-nav-list .mat-list-item:hover a{font-size:18px}
 .pagelogowrapper{margin-left:10%}
 .vpheaderwrapper{position:inherit!important}
