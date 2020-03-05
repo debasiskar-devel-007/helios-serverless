@@ -527,13 +527,17 @@ img{vertical-align:middle;height:auto;width:100%}
       min-height: inherit;
       height: auto;
       padding-top: 70%!important;
-      background-size: 203% !important;
+      background-size: 198% !important;
       background-position: top right;
       background-repeat: no-repeat;
       background-color: #021423;
       padding-bottom: 25px!important;
       background-position: top right 0% !important;
     }
+  }
+
+  @media (max-width: 1440px){
+    .homesection2wrapper.mat-card {background-size: 190% !important;}
   }
 
 @media (max-width: 1440px){
