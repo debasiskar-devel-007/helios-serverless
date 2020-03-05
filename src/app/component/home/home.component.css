@@ -224,4 +224,5 @@
 .homeblock1bg h2,.homeblock1bg h1{font-size:calc(var(--min-font) * 1px);line-height:normal;margin-top: 10px;}
 .homesection1wrapper .flex-row-gen .mat-list-item{flex:1 1 100%}
 .helioshomeblock4imgwrapper{width:100%;height:auto}
+:host /deep/ .homesection1wrapper .flex-row-gen .mat-list-item-content {justify-content: center;}
 }
