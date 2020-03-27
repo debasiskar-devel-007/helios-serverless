@@ -162,7 +162,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/helios-serverless/production/1583318290619-2020-03-04T10:38:10.619Z/helios-serverless.zip"
+                "S3Key": "serverless/helios-serverless/production/1583383575967-2020-03-05T04:46:15.967Z/helios-serverless.zip"
               },
               "FunctionName": "helios-serverless-production-api",
               "Handler": "lambda.universal",
@@ -181,14 +181,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "ApiLambdaVersioni92eSvBNO2D9868efGklsmspYKXsdRiTHDYn5BMgPH0": {
+          "ApiLambdaVersionkp5LzSHcQupASPxWcA3aRT7NoD8LBq5fpopUKHBM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "NXsmpcKuECS7NA55eNrREtxg5uF6KollJ+rV1cLW2K8="
+              "CodeSha256": "UBgGnKbMSKxFYK6Ri0Der2yd+DMc8qAAm47Zmcu0m24="
             }
           },
           "ApiGatewayRestApi": {
@@ -307,7 +307,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1583318257651": {
+          "ApiGatewayDeployment1583383538506": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -367,7 +367,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersioni92eSvBNO2D9868efGklsmspYKXsdRiTHDYn5BMgPH0"
+              "Ref": "ApiLambdaVersionkp5LzSHcQupASPxWcA3aRT7NoD8LBq5fpopUKHBM"
             }
           },
           "ServiceEndpoint": {
@@ -492,7 +492,7 @@
         "timeout": 10,
         "runtime": "nodejs10.x",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersioni92eSvBNO2D9868efGklsmspYKXsdRiTHDYn5BMgPH0"
+        "versionLogicalId": "ApiLambdaVersionkp5LzSHcQupASPxWcA3aRT7NoD8LBq5fpopUKHBM"
       }
     },
     "serviceFilename": "serverless.yml",
@@ -501,7 +501,7 @@
     "artifact": "/home/influxiq-03/Downloads/helios-serverless/.serverless/helios-serverless.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/helios-serverless/production/1583318290619-2020-03-04T10:38:10.619Z",
+    "artifactDirectoryName": "serverless/helios-serverless/production/1583383575967-2020-03-05T04:46:15.967Z",
     "artifact": "helios-serverless.zip"
   }
 }
